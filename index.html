@@ -1,0 +1,48 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: home
+---
+<head>
+<style>
+/* Container needed to position the overlay. Adjust the width as needed */
+.container {
+  position: relative;
+  width: 100%;
+}
+
+/* Make the image to responsive */
+.image {
+  display: block;
+  width: 100%;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 10px 0px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+  opacity: 1;
+}
+</style>
+</head>
+<h2>Photo Galleries</h2>
+<div class="container">
+	<a href="auckland.html"><img src="https://drscdn.500px.org/photo/261618029/m%3D900/v2?user_id=27444587&webp=true&sig=ae76cccaf3a7dd2de8c4835c75d8ab5806a21d5b59a043394f9c7973a2b1e1f8" alt="Auckland from Rangitoto Island" class="image">
+	<div class="overlay">Auckland</div>
+	</a>
+</div>
