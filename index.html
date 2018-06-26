@@ -13,7 +13,7 @@ layout: home
 }
 
 /* Make the image to responsive */
-.image {
+img {
   display: block;
   width: 100%;
 }
@@ -38,11 +38,20 @@ layout: home
 .container:hover .overlay {
   opacity: 1;
 }
+
+/* Image hover shadow */
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, .2), 0 0 1px 1px rgba(0, 0, 0, 0.1);
+}
 </style>
 </head>
 <h2>Photo Galleries</h2>
 <div class="container">
-	<a href="auckland.html"><img src="https://drscdn.500px.org/photo/261618029/m%3D900/v2?user_id=27444587&webp=true&sig=ae76cccaf3a7dd2de8c4835c75d8ab5806a21d5b59a043394f9c7973a2b1e1f8" alt="Auckland from Rangitoto Island" class="image">
+	<a href="auckland.html"><img src="https://lh3.googleusercontent.com/KN_V5JPfYGMJOQN-D_RLNUaNktVS1KqBwWclNAdlI2yeFRooyAfSgEWM15-QpzN73h4V2AgS9oNYBNGekJDGqfz7bKlRYT8i0d2FsJie5qodzwe3SppsxSEJ6NzbEG21pmcvEjlBySUF3FBNNdzw9OMdJEDKD28JKik8LlFl4uQcd4in4J1IYcnhQmbrZmC8n-ZYrEL0mu5oK1B1QP9OaXPUdWK254D4qpbK4ImLFDIPOriS1pvSPXSVmnFwOxf58cWOdU--gAt5CLun-jtZsKMjVT2ZqDevCXJdZUha4-2KF1n6rMS_GrbniP45XjdzHw46zHniriFSbU8SlJMgt9yHixH01B4xQUm7AUsplaTsBy3RuMQY3Mv-dEeZBFLiXV7FIruljg8bxFv8EiXYXbBUb_KMsbk-dPLXQw63H05c8piEHsMi2IRtjGdIeBJT4rWtIxOHHv1Z5I4UyQObsHUg72fwyp44GOs-ek-uQPfJmw7Uohdcl8g3RBf4ul3IOA2YoRvhRF9bZpPWth2OTdIy3r-w5J0iWa5UJXuWZ8WR5qhE4pSWowHEAnnWX1YLixSUzWfoPntXFH3Do5-H5tjllbpwhwvWRgVjhSg=w2316-h1538-no" alt="Auckland from Rangitoto Island" class="hover-shadow cursor">
 	<div class="overlay">Auckland</div>
 	</a>
 </div>
