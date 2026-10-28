@@ -23,9 +23,16 @@ github_username: bavels
 # Build settings
 markdown: kramdown
 theme: minima
-gems:
-    - jekyll-feed
-    - jekyll-paginate
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Minima 2.5 uses Sass @import and global color functions, which Dart Sass
+# reports as deprecated. Silence them until the theme is replaced.
+sass:
+  quiet_deps: true
+  silence_deprecations:
+    - import
 
 # Determine number of items per page
 # paginate: 5
